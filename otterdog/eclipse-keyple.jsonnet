@@ -2,6 +2,10 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('iot.keyple', 'eclipse-keyple') {
   settings+: {
+    blog: "https://keyple.org/",
+    description: "Organization grouging together all the Eclipse Keyple project repositories",
+    email: "keyple-dev@eclipse.org",
+    name: "Eclipse Keyple",
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
